@@ -119,7 +119,7 @@ class Board {
 
         this.newGame();
 
-        this.canvas.addEventListener("click",(event: MouseEvent) => this.checkMove(event.layerX));
+        this.canvas.addEventListener("click",(event: MouseEvent) => this.checkMove(event.offsetX));
         
         this.newGameBtn = <HTMLButtonElement>document.getElementById("newGame");
         this.newGameBtn.addEventListener("click",(event: MouseEvent) => this.newGame());

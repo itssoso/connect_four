@@ -64,7 +64,7 @@ class Board {
         this.matrix = new Array();
         this.gameStop = true;
         this.newGame();
-        this.canvas.addEventListener("click", (event) => this.checkMove(event.layerX));
+        this.canvas.addEventListener("click", (event) => this.checkMove(event.offsetX));
         this.newGameBtn = document.getElementById("newGame");
         this.newGameBtn.addEventListener("click", (event) => this.newGame());
     }
