@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#npm install
+npm install
 npm run grunt
 
 open ./dist/index.html
