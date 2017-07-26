@@ -1,4 +1,5 @@
 # Connect Four
+https://github.com/soullessknight/connect_four
 ## Getting Started
 
 These are the steps to get started:
