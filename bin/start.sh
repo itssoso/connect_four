@@ -3,4 +3,14 @@
 npm install
 npm run grunt
 
-open ./dist/index.html
+case "$OSTYPE" in
+    darwin*)
+        open ./dist/index.html
+        ;;
+    msys*)
+        start ./dist/index.html
+        ;;
+    *)
+        echo "Not Supported. Open ./dist/index.html manually"
+        ;;
+esac
